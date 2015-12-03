@@ -77,9 +77,13 @@
 	</table>
 	<div id="tabs">
 		<ul>
-			<li><a
-				href="opdEntry.htm?patientId=${patient.patientId }&opdId=${opd.conceptId }&queueId=${queueId}"
-				title="OPD entry"><span> Clinical Notes</span> </a></li>
+			<c:set var="compare_status" value="Not Paid Reg Fee"/>
+			<c:if test="${(visitStatus != compare_status)}">
+				<li><a
+						href="opdEntry.htm?patientId=${patient.patientId }&opdId=${opd.conceptId }&queueId=${queueId}"
+						title="OPD entry"><span> Clinical Notes</span> </a>
+				</li>
+			</c:if>
 			<li><a
 				href="clinicalSummary.htm?patientId=${patient.patientId }"
 				title="Clinical summary"><span>Clinical Summary</span> </a></li>
