@@ -6,7 +6,7 @@
   <artifactId>patientdashboard</artifactId>
   <name>Patient Dashboard</name>
 
-  <version>1.4.0</version>
+  <version>1.4.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <description>Patient  dashboard for hospital</description>
